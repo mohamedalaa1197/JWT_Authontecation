@@ -25,8 +25,8 @@ app.use(cookie());
 
 // database connection
 const dbURI =
-    //  'mongodb://127.0.0.1:27017/jwt-Course'
-    'mongodb+srv://Moahmed:MohamedAlaa@cluster0.parrl.mongodb.net/JWTCourse?retryWrites=true&w=majority';
+     'mongodb://127.0.0.1:27017/jwt-Course'
+    
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
     .then((result) => app.listen(3000, () => {
         console.log("server is up")
